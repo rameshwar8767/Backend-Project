@@ -1,6 +1,3 @@
-// import { Promise } from "mongoose"
-
-// import { Promise } from "mongoose"
 
 const asyncHandler = (requestHandler) => {
     return (req, res, next) => {

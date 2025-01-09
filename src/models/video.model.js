@@ -1,7 +1,7 @@
 import mongoose, {Schema} from 'mongoose';
 import mongooseAggregatePaginate from 'mongoose-aggregate-paginate-v2';
 
-const videoSchema = (
+const videoSchema = new Schema(
     {
         videoFile:{
             type: String, //cloudinary url
@@ -20,7 +20,7 @@ const videoSchema = (
             required: true
         },
         duration:{
-            type: Number,//cloudinary url
+            type: Number,
             required: true
         },
         views:{
